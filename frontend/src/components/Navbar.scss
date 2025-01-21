@@ -1,0 +1,116 @@
+.navbar {
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: #458fa1;
+    background-color: #e0ebe7;
+    padding: 10px 5%;
+    // min-height: 80px;
+
+    .nav-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        overflow: hidden;
+        .logoName{
+            margin-left: 30px;
+            font-size: 30px;
+            font-weight: 600;
+            color: #002e3d;
+        }
+        img {
+            height: 100%;
+            // width: 50px;
+
+            object-fit: cover;
+        }
+    }
+
+    .nav-right {
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #004a61;
+            padding: 14px 16px;
+
+            .active {
+                font-weight: 600;
+            }
+        }
+
+        a:hover {
+            color: #002e3d;
+            font-weight: 500;
+
+            :before {
+                content: "";
+                height: 20px;
+                width: max-content;
+                position: absolute;
+                top: -10px;
+                left: 0px;
+
+            }
+        }
+    }
+
+    .togglerIcon {
+
+        // display: none;
+        svg {
+            height: 50px;
+            width: 50px;
+            fill: #004a61;
+            border: 2px solid #004a61;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    .togglerIcon {
+        display: block;
+        float: right;
+    }
+    
+    .nav-right {
+        display: none;
+    }
+}
+@media screen and (min-width:750px) {
+    .togglerIcon {
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .nav-right {
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 100vw;
+        justify-items: center;
+        background-color: #e0ebe7;
+        a{
+            display: block;
+            border-bottom: .5px solid #004a61;
+        }
+        a:last-child {
+            border-bottom: none;
+        }
+    }
+}

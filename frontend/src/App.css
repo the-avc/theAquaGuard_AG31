@@ -1,0 +1,8 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* overflow: hidden; */
+}
+.AppMainJsx{
+  min-height: 100vh;
+}

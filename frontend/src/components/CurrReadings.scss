@@ -1,0 +1,52 @@
+.currReadings {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 20px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f1fffe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    .CurrReadingTitle{
+        color: #002e3d;
+        text-align: center;
+        margin-bottom: 10px ;
+        margin-top: 10px;
+    }
+    .currReadingsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .currRead {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 20px;
+
+            h3 {
+                margin: 0px;
+            }
+
+            p {
+                margin: 0px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .currReadings {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+
+            .currRead {
+                margin: 30px 0px;
+            }
+        }
+    }
+}
