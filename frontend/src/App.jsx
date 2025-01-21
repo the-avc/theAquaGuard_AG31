@@ -18,10 +18,7 @@ function App() {
 
         <PageLoader />
       </div>
-      {/* <div>
-        <h1>water management dashboard</h1>
-        <WaterManage />
-      </div> */}
+      
     </div>
     <Footer/>
  </>
